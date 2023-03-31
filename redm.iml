@@ -9,6 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="google.code.gson" level="project" />
     <orderEntry type="library" name="apache.httpcomponents.fluent.hc" level="project" />
-    <orderEntry type="library" name="taskadapter.redmine.java.api" level="project" />
+    <orderEntry type="library" name="taskadapter.redmine.java.api1" level="project" />
   </component>
 </module>
