@@ -29,12 +29,12 @@ public class UI {
                 "\nПотрачено: " + timeEntry.getHours() + "\nДата - " + dateFormat.format(timeEntry.getSpentOn()) + "\n";
     }
 
-//    public static <T> void ListPrint(List<T> list) {
-//        for (T element : list) {
-//            System.out.println(element.toString());
-//        }
-//        System.out.println("\n");
-//    }
+    public static <T> void ListPrint(List<T> list) {
+        for (T element : list) {
+            System.out.println(element.toString());
+        }
+        System.out.println("\n");
+    }
 
     public static void IssuesPrint(List<Issue> list) {
         for (Issue issue : list) {
@@ -157,6 +157,16 @@ public class UI {
             System.out.println("Неверно введенная дата");
             return null;
         }
+    }
+
+    public static int YearChoose() {
+        System.out.println("Введите год");
+        return Integer.parseInt(in.nextLine());
+    }
+
+    public static int MonthChoose() {
+        System.out.println("Введите месяц");
+        return Integer.parseInt(in.nextLine());
     }
 
 }

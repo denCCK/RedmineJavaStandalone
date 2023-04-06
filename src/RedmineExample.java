@@ -55,10 +55,10 @@ public class RedmineExample {
                                         fromDate, toDate));
                             }
                             case 4 -> {
-                                Integer year;
-                                Integer month;
-                                UI.MapPrint(redmineFiler.SearchLess40HourDWeeks(currentUser.getId(),
-                                        2023, 3));
+                                Integer year = UI.YearChoose();
+                                Integer month = UI.MonthChoose();
+                                UI.ListPrint(redmineFiler.SearchLess40HourDWeeks(currentUser.getId(),
+                                        year, month));
                             }
                             case 0 -> isExit = true;
                             default -> UI.PrintError();
